@@ -147,6 +147,10 @@ Spring IoC 컨테이너가 관리하는 자바 객체를 **빈(Bean)**이라 한
 - 마지막으로, XML을 이용해 DI 설정정보를 만드는 방법과 의존 오브젝트가 아닌 일반 값을 외부에서 설정하게 런타임 시에 주입하는 방법을 알아봤다.(XML 설정)  
 
 
+** 추가적으로.. Reference 참고 **
+Spring Boot로 전환해야 하는 이유에 대해서..  
+Maven과 Gradle 에 대해서..  
+
 
 # Reference
 [wiki-스프링이란](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%94%84%EB%A7%81_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC) 
@@ -157,3 +161,6 @@ Spring IoC 컨테이너가 관리하는 자바 객체를 **빈(Bean)**이라 한
 [디자인패턴-전략패턴&디비커넥션예제](https://withseungryu.tistory.com/68)  
 [SOLID 객체지향 설계 원칙](https://velog.io/@zayson/Spring-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8-3-SOLID-%EC%9B%90%EC%B9%99)  
 [토비스프링 1장 정리](https://kurts.tistory.com/11)  
+[Spring Boot를 사용해야 하는 이유](https://yjh5369.tistory.com/entry/spring-boot%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)   
+[maven vs gradle](https://jisooo.tistory.com/entry/Spring-%EB%B9%8C%EB%93%9C-%EA%B4%80%EB%A6%AC-%EB%8F%84%EA%B5%AC-Maven%EA%B3%BC-Gradle-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0)  
+[Maven With Nexus](https://dev-youngjun.tistory.com/105)  
