@@ -4,7 +4,7 @@
 > **스프링이란**   
 : 스프링 프레임워크(영어: Spring Framework)는 자바 플랫폼을 위한 오픈 소스 애플리케이션 **경량화 프레임워크**
 
-![스프링](https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg){: width="400" height="100"}
+<img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" width="400" height="100"/>
 
 - 스프링의 특징 7가지  
 
