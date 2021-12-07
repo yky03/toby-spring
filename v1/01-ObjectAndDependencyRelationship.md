@@ -20,10 +20,10 @@
 
 <br/>
 
-![컨텍스트](https://linked2ev.github.io/assets/img/devlog/201909/spring-context-s1.png)  
-
 > **빈과 빈 팩토리 ( 애플리케이션 컨텍스트 )**   
 : 스프링의 핵심을 담당하는 건 빈 팩토리 또는 애플리케이션 컨텍스트라고 불리는 것이다.
+
+![컨텍스트](https://linked2ev.github.io/assets/img/devlog/201909/spring-context-s1.png)  
 
 **빈(bean)이란 스프링이 제어권을 가지고 직접 만들고 관계를 부여하는 오브젝트**를 말하며, 오브젝트 단위의 애플리케이션 **컴포넌트**라고도 한다. 
 
