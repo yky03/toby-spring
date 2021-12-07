@@ -24,6 +24,11 @@
 : 스프링의 핵심을 담당하는 건 빈 팩토리 또는 애플리케이션 컨텍스트라고 불리는 것이다.
 
 ![컨텍스트](https://linked2ev.github.io/assets/img/devlog/201909/spring-context-s1.png)  
+![디스패처 서블릿](https://blog.kakaocdn.net/dn/MRXX3/btqK7014LOZ/wMKgG9RVkdZR7Ag5nD4wh0/img.png)    
+
+(스프링에서 말하는 WebApplicationContext는 ApplicationContext를 확장한 WebApplicationContext 인터페이스의 구현체를 말하며,   
+WebApplicationContext는 ApplicationContext를 상속받아서 사용한다. **스프링 컨테이너에서 관리하고 동작**한다고 생각하면 된다.  
+**DispatcherServlet이 여러 개일 경우 공통으로 사용할 빈들을 Root WebApplicationContext**에 선언해두고 공유할 수 있게 하는 것.) 
 
 **빈(bean)이란 스프링이 제어권을 가지고 직접 만들고 관계를 부여하는 오브젝트**를 말하며, 오브젝트 단위의 애플리케이션 **컴포넌트**라고도 한다. 
 
@@ -182,6 +187,7 @@ Maven과 Gradle 에 대해서..
 [디자인패턴-전략패턴&디비커넥션예제](https://withseungryu.tistory.com/68)  
 [SOLID 객체지향 설계 원칙](https://velog.io/@zayson/Spring-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8-3-SOLID-%EC%9B%90%EC%B9%99)  
 [애플리케이션컨텍스트](https://linked2ev.github.io/spring/2019/09/15/Spring-5-%EC%84%9C%EB%B8%94%EB%A6%BF%EA%B3%BC-%EC%8A%A4%ED%94%84%EB%A7%81%EC%97%90%EC%84%9C-Context(%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8)%EB%9E%80/)  
+[디스패처서블릿](https://mangkyu.tistory.com/18)  
 [토비스프링 1장 정리](https://kurts.tistory.com/11)  
 [Spring Boot를 사용해야 하는 이유](https://yjh5369.tistory.com/entry/spring-boot%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)   
 [maven vs gradle](https://jisooo.tistory.com/entry/Spring-%EB%B9%8C%EB%93%9C-%EA%B4%80%EB%A6%AC-%EB%8F%84%EA%B5%AC-Maven%EA%B3%BC-Gradle-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0)  
