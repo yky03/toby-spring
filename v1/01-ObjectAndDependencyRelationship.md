@@ -52,7 +52,18 @@ WebApplicationContext는 ApplicationContext를 상속받아서 사용한다. **�
 final사용가능, 순환참조방지(서버실행시 바로 에러 파악 가능), 테스트코드 작성 용이.
 -> **필드주입과 수정자 주입**은 먼저 **빈을 생성한 후, 주입하려는 빈을 찾아 주입**한다.
 -> **But 생성자 주입**은 먼저 생성자의 인자에 사용되는 빈을 찾거나 빈 팩토리에서 만든다. 그 후 찾은 인자 빈으로 주입하려는 빈의 생성자를 호출한다.
-즉, **먼저 빈을 생성하지 않고 주입하려는 빈을 먼저 찾는다.**
+즉, **먼저 빈을 생성하지 않고 주입하려는 빈을 먼저 찾는다.**  
+
+lombok ex)  
+```java
+@Controller
+@RequiredArgsConstructor
+public class BoardController {
+	private final IBoardItemService boardItemService;
+    
+    /* 이하 생략 */
+}
+```
 
 <br/>
 
