@@ -187,6 +187,14 @@ Spring IoC 컨테이너가 관리하는 자바 객체를 **빈(Bean)**이라 한
 Spring Boot로 전환해야 하는 이유에 대해서..  
 Maven과 Gradle 에 대해서..  
 
+<br/>
+
+**Q&A**  
+-applicationContext  
+-싱글톤 디자인 패턴과 싱글톤 레지스트리가 스프링에서 어떻게 쓰이고 있는지    
+-불변 객체에 대해서(예시 String)      
+-생성자 주입 방식 사용에 대해서  
+
 <br/><br/>
 
 # Reference
@@ -203,3 +211,4 @@ Maven과 Gradle 에 대해서..
 [Spring Boot를 사용해야 하는 이유](https://yjh5369.tistory.com/entry/spring-boot%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)   
 [maven vs gradle](https://jisooo.tistory.com/entry/Spring-%EB%B9%8C%EB%93%9C-%EA%B4%80%EB%A6%AC-%EB%8F%84%EA%B5%AC-Maven%EA%B3%BC-Gradle-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0)  
 [Maven With Nexus](https://dev-youngjun.tistory.com/105)  
+[인프런-싱글톤 DIP위반?](https://www.inflearn.com/questions/123791)  
