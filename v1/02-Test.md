@@ -7,7 +7,8 @@
 
 <br/>
 
-> **- 유용성(사용성)**  
+> **- 유용성(사용성)**   
+
 원초적으로 테스트 코드를 작성한다고 하면 우리는 메인 메소드를 만들고,  
 applicationContext 객체를 만들어서 출력값을 찍어서 눈으로 직접 판단을 할 것이다.   
 
@@ -18,9 +19,12 @@ applicationContext 객체를 만들어서 출력값을 찍어서 눈으로 직�
 따라서 테스트는 **작은 코드로 단위 테스트(unit test)** 하여 테스트 하도록 해야 한다.[(폭포수 모델 -> 빠른 피드백의 애자일 모델)](https://universitytomorrow.com/19)  
 수동 확인 작업의 번거로움(단지 콘솔에 출력된 값으로 판단하는건 사람의 몫이기 때문에 위험)을 피하기 위해 단정문(http://junit.sourceforge.net/javadoc/org/junit/Assert.html)을 사용하는것이 좋다.   
 
-> **-JUnit이란**  
+> **-JUnit이란**   
+
+
 
 > **-단정문이란**  
+
 
 ```java
 // 대표적인 단정문(assertXXXX)
@@ -31,7 +35,8 @@ assertTrue(a) : a가 참인지 확인
 assertNotNull(a) : a객체가 null이 아님을 확인
 ```
 
-> **-assertTrue보다는 assertThat을 사용하자**
+> **-assertTrue보다는 assertThat을 사용하자**  
+
 - 코드 예시 캡처  
 
 ```java
@@ -45,7 +50,8 @@ assertNotNull(a) : a객체가 null이 아님을 확인
 
 ```
 
-> **-예외조건 테스트(익셉션 뿐만 아니라 예외 케이스 등 테스트를 작성할 때 부정적인 케이스를 먼저 만드는 습관을 들이는 게 좋다.)**
+> **-예외조건 테스트(익셉션 뿐만 아니라 예외 케이스 등 테스트를 작성할 때 부정적인 케이스를 먼저 만드는 습관을 들이는 게 좋다.)**  
+
 ```java
 @Test(expected=XXXXExcepion.class)  
 ```
@@ -60,6 +66,7 @@ assertNotNull(a) : a객체가 null이 아님을 확인
 <br/>
 
 > **테스트케이스는 동등분할이나 경계값 분석을 적극적으로 테스트하자**  
+
 -동등분할 :  
 같은 결과를 내는 값의 범위를 구분해서 각 대표값으로 테스트 하는 방법.  
 (true, false, 예외 3가지 케이스라면 각각의 입력값이나 상황을 찾아 모든 경우를 테스트)    
@@ -70,6 +77,7 @@ assertNotNull(a) : a객체가 null이 아님을 확인
 <br/>
 
 > **-2장 테스트 정리**   
+
 -테스트는 **자동화** 되야 하고, **빠르게 실행**할 수 있어야 한다.   
 -main() 테스트 대신 **Junit 프레임워크를 이용**한 테스트 작성이 편리하다.   
 -테스트 결과는 **일관성**이 있어야 한다. 코드의 변경 없이 환경이나 테스트 실행 순서에 따라서 결과가 달라지면 안 된다.  
@@ -92,6 +100,7 @@ assertNotNull(a) : a객체가 null이 아님을 확인
 <br/>
 
 > **추가적으로..  Reference참고  
+
 -[Junit4와 JUnit5에 대해서](https://blog.naver.com/ykycome00/222271373416)    
 -[Mockito](https://blog.naver.com/ykycome00/222277964801)  
 -[SpringFramework는 JUnit을 어떻게 사용하고 있고 적용되어 있는지..P199(배포판 jar도 가끔 열어서 tip을 ](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/test/java/org/springframework/util)  
@@ -99,7 +108,8 @@ assertNotNull(a) : a객체가 null이 아님을 확인
 
 <br/>
 
->**회고 한줄평**  
+>**회고 한줄평**   
+
 코드를 먼저 구현하고 테스트 코드를 주로 만들고 있는데,  
 TDD의 방향성과 비슷하게 **테스트 코드를 중간중간 먼저 만들면서(실패케이스와 단조로운 성공 케이스 and 메소드화) 개발을 진행**해야 할 것 같다. 
 (But, 무조건 TDD대로만 할 필요는 없고 **주어진 일정과 개발 환경을 고려하여 최선의 방법을 찾아 적용하고 개선하는 것이 중요**할 것 같다.)  
