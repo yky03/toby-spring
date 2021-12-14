@@ -57,7 +57,7 @@ assertTrue(a) : a가 참인지 확인
 assertNotNull(a) : a객체가 null이 아님을 확인
 ```
 
-> **-assertTrue보다는 assertThat 등 Hamcrest을 사용하자**  
+> **assertTrue보다는 assertThat 등 Hamcrest을 사용하자**  
 -Failure 메시지의 가독성
 -테스트 코드의 가독성
 -다양한 Matcher 제공
@@ -140,11 +140,12 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 
 <br/>
 
-**스프링을 사용하는 개발자라면 자신이 만든 코드를 테스트로 검정하는 방법을 알고 있어야하며, 테스트를 개발에 적극적으로 활용할 수 있어야 한다.**  
+**스프링을 사용하는 개발자라면 자신이 만든 코드를 테스트로 검정하는 방법을 알고 있어야하며,   
+테스트를 개발에 적극적으로 활용할 수 있어야 한다.**  
 
 <br/>
 
-> **추가적으로..  Reference참고  
+> **추가적으로..  Reference참고** 
 
 -[Junit4와 JUnit5에 대해서](https://blog.naver.com/ykycome00/222271373416) 
 : junit5
@@ -171,7 +172,7 @@ Dependency에서 vintage-engine은 exclude가 되어있다.
 -[Mockito](https://blog.naver.com/ykycome00/222277964801)  
 : 
 
--[SpringFramework는 JUnit을 어떻게 사용하고 있고 적용되어 있는지..P199(배포판 jar도 가끔 열어서 tip을 얻으면 좋다.](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/test/java/org/springframework/util)  
+-[SpringFramework 에도 실제 junit 코드가 있다.(TIP을 얻어가기)](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/test/java/org/springframework/util)  
 
 
 <br/>
@@ -186,7 +187,7 @@ TDD의 방향성과 비슷하게 **테스트 코드를 중간중간 먼저 만�
 
 <br/>
 
-**-Reference**  
+**-References**  
 [Junit의 동작 방식](https://goodgid.github.io/How-JUnit-Works/)   
 [Junit5 구조](https://goodgid.github.io/Junit5-Intro-Structure/)  
 [Assert단정문](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=k_builder&logNo=40192031458)  
