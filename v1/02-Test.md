@@ -18,7 +18,7 @@ applicationContext 객체를 만들어서 출력값을 찍어서 눈으로 직�
 
 따라서 테스트는 **작은 코드로 단위 테스트(unit test)** 하여 테스트 하도록 해야 한다.[(폭포수 모델 -> 빠른 피드백의 애자일 모델)](https://universitytomorrow.com/19)  
 
-<br/>
+
 ![폭포수 애자일 비교](https://myservername.com/img/other/98/agile-vs-waterfall-which-is-best-methodology-2.png)  
 <br/>
 
