@@ -57,10 +57,11 @@ assertTrue(a) : a가 참인지 확인
 assertNotNull(a) : a객체가 null이 아님을 확인
 ```
 
-> **assertTrue보다는 assertThat 등 Hamcrest을 사용하자**  
--Failure 메시지의 가독성
--테스트 코드의 가독성
--다양한 Matcher 제공
+> **assertTrue보다는 assertThat 등 Hamcrest을 사용하자**   
+-Failure 메시지의 가독성  
+-테스트 코드의 가독성  
+-다양한 Matcher 제공  
+
 ```
 먼저 assertTrue를 사용하는 예와 실패 메시지를 살펴보자.
 assertTrue(expected.contains(actual));
