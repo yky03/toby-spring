@@ -6,7 +6,7 @@
 : **스프링**이 개발자에게 제공하는 가장 중요한 **가치**가 무엇이냐고 질문한다면 주저하지 않고 **객체지향과 테스트**라고 대답할 수 있다.(**그만큼 중요하다는 뜻**)
 -> 스프링으로 개발을 하면서 테스트를 만들지 않는다면 이는 스프링이 지닌 가치의 절반을 포기하는 것과 마찬가지이다.  
 
-<br/>
+<br/><br/>
 
 > **유용성(사용성)**   
 
@@ -20,12 +20,14 @@ applicationContext 객체를 만들어서 출력값을 찍어서 눈으로 직�
 따라서 테스트는 **작은 코드로 단위 테스트(unit test)** 하여 테스트 하도록 해야 한다.[(폭포수 모델 -> 빠른 피드백의 애자일 모델)](https://universitytomorrow.com/19)  
 수동 확인 작업의 번거로움(단지 콘솔에 출력된 값으로 판단하는건 사람의 몫이기 때문에 위험)을 피하기 위해 [단정문(Assert)](http://junit.sourceforge.net/javadoc/org/junit/Assert.html)을 사용하는것이 좋다.   
 
+<br/><br/>
 
 > **JUnit이란**   
 
 : 자바의 단위 테스팅 도구이며 단 하나의 jar파일로 되어있다.  
 테스트 클래스를 별도로 만들어서 테스트 케이스와 히스토리를 남기며 어노테이션과 단정문으로 테스트 케이스를 실행시켜 실패, 성공 등의 코드에 대한 테스트를 할 수 있게 한다.  
 
+<br/><br/>
 
 > **단정문이란**  
 말 그대로 결과를 단정 짓는 것이다.  
@@ -85,13 +87,19 @@ Expected: a string containing "expected"
 expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 찾기 위해 별도의 디버깅 필요없이 에러 메시지 만으로 잘못된 부분을 바로 파악할 수 있다.
 ```
 
+<br/><br/>
 
-> **-예외조건 테스트(익셉션 뿐만 아니라 예외 케이스 등 테스트를 작성할 때 부정적인 케이스를 먼저 만드는 습관을 들이는 게 좋다.)**  
+
+> **예외조건 테스트(익셉션 뿐만 아니라 예외 케이스 등 테스트를 작성할 때 부정적인 케이스를 먼저 만드는 습관을 들이는 게 좋다.)**  
 
 ```java
 @Test(expected=XXXXExcepion.class)  
 ```
-**-TDD 3가지**  
+
+<br/><br/>
+
+
+**TDD 3가지**  
 
 
 **테스트커버리지**
@@ -113,7 +121,7 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 
 <br/>
 
-> **-2장 테스트 정리**   
+> **2장 테스트 정리**   
 
 -테스트는 **자동화** 되야 하고, **빠르게 실행**할 수 있어야 한다.   
 -main() 테스트 대신 **Junit 프레임워크를 이용**한 테스트 작성이 편리하다.   
@@ -140,7 +148,7 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 
 -[Junit4와 JUnit5에 대해서](https://blog.naver.com/ykycome00/222271373416) 
 : junit5
-<img src="https://goodgid.github.io/assets/img/junit/Junit5-Intro-Structure_1.png" width="600" height="600"/>
+<img src="https://goodgid.github.io/assets/img/junit/Junit5-Intro-Structure_1.png" width="500" height="500"/>
 
 ```
 -JUnit Platform
