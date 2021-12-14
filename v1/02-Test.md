@@ -32,6 +32,7 @@ applicationContext 객체를 만들어서 출력값을 찍어서 눈으로 직�
 > **단정문이란**  
 
 말 그대로 **결과를 단정** 짓는 것이다.  
+<br/>
 접두사에 **assert**가 붙는것이 주 특징이며 예상값과 결과값을 비교해 프로그램(사람의 눈이 아닌)이 결과물을 테스팅 할 수 있도록 한다.    
 
 ```
@@ -58,7 +59,10 @@ assertTrue(a) : a가 참인지 확인
 assertNotNull(a) : a객체가 null이 아님을 확인
 ```
 
+<br/>
+
 > **assertTrue보다는 assertThat 등 Hamcrest을 사용하자**   
+ 
 -Failure 메시지의 가독성  
 -테스트 코드의 가독성  
 -다양한 Matcher 제공  
@@ -126,6 +130,8 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 
 ```
 
+<br/>
+
 > **TDD 3가지**   
 
 : TDD란 Test Driven Development의 약자로써 말그대로 테스트를 주도하며 개발을 진행하는 것이다.  
@@ -149,7 +155,7 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 **-경계값분석** :  
 에러는 동등분할 범위의 경계에서 주로 많이 발생한다는 특징을 이용해서 경계의 근처에 있는 값을 이용해 테스트 하는 방법.    
 
-<br/>
+<br/><br/>
 
 > **2장 테스트 정리**   
 
@@ -173,7 +179,7 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 **스프링을 사용하는 개발자라면 자신이 만든 코드를 테스트로 검정하는 방법을 알고 있어야하며,   
 테스트를 개발에 적극적으로 활용할 수 있어야 한다.**  
 
-<br/>
+<br/><br/>
 
 > **추가적으로..  Reference참고** 
 
@@ -199,13 +205,20 @@ Spring Boot에서는 2.2 올리면서 Default로 설정되었다.
 Dependency에서 vintage-engine은 exclude가 되어있다.
 ```
 
+
+<br/>
+
 >-[Mockito](https://velog.io/@max9106/Mockito-Mockito%EB%9E%80)    
 
 : Mock(진짜 객체 처럼 동작하지만 프로그래머가 직접 컨트롤 할 수 있는 객체)을 지원하는 프레임워크.     
 가짜 mock 객체를 만들어 예외를 던지거나 특정 결과값에 대한 조건을 지정하여 테스트가 가능하다.  
 [mockito사용법 - 이해가 쉬운 예제 정리](https://jdm.kr/blog/222)   
 
->-[SpringFramework 에도 실제 junit 코드가 있다.(TIP을 얻어가기)](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/test/java/org/springframework/util)  
+<br/>
+
+>Tip
+
+: [SpringFramework 에도 실제 사용중인 junit 코드가 있다.](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/test/java/org/springframework/util)   
 
 
 <br/>
@@ -221,7 +234,7 @@ TDD의 방향성과 비슷하게 **테스트 코드를 중간중간 먼저 만�
 
 <br/>
 
-**-References**  
+>**-References**  
 [Junit의 동작 방식](https://goodgid.github.io/How-JUnit-Works/)   
 [Junit5 구조](https://goodgid.github.io/Junit5-Intro-Structure/)  
 [Assert단정문](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=k_builder&logNo=40192031458)  
