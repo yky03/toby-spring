@@ -183,8 +183,9 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 
 > **추가적으로..  Reference참고** 
 
--[Junit4와 JUnit5에 대해서](https://blog.naver.com/ykycome00/222271373416) 
-: junit5를 사용하면 public 생략 가능, displayname 등 신규 어노테이션도 사용 가능.  
+-[Junit4와 JUnit5에 대해서](https://blog.naver.com/ykycome00/222271373416)  
+: junit5를 사용하면 public 생략 가능, displayname 등 신규 어노테이션도 사용 가능하다.  
+<br/>
 <img src="https://goodgid.github.io/assets/img/junit/Junit5-Intro-Structure_1.png" width="500" height="500"/>
 
 ```
@@ -210,7 +211,7 @@ Dependency에서 vintage-engine은 exclude가 되어있다.
 
 >-[Mockito](https://velog.io/@max9106/Mockito-Mockito%EB%9E%80)    
 
-: Mock(진짜 객체 처럼 동작하지만 프로그래머가 직접 컨트롤 할 수 있는 객체)을 지원하는 프레임워크.     
+: **Mock(진짜 객체 처럼 동작하지만 프로그래머가 직접 컨트롤 할 수 있는 객체)을 지원하는 프레임워크.**     
 가짜 mock 객체를 만들어 예외를 던지거나 특정 결과값에 대한 조건을 지정하여 테스트가 가능하다.  
 [mockito사용법 - 이해가 쉬운 예제 정리](https://jdm.kr/blog/222)   
 
