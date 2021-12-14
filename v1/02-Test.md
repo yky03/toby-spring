@@ -100,11 +100,6 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 <br/><br/>
 
 
-> **TDD 3가지**  
-
-
-
-
 > **테스트(코드) 커버리지**
 코드 커버리지란 소프트웨어 테스트가 '잘', '성공적으로' 수행됬는지 판단하는 기준으로 활용할 수 있다.  
 크게 구문, 조건, 결정의 요소로써 각 요소를 얼마나 수행했냐에 따라 비율을 나타낸다.  
@@ -129,15 +124,25 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 
 ```
 
+> **TDD 3가지**  
+
+: TDD란 Test Driven Development의 약자로써 말그대로 테스트를 주도하며 개발을 진행하는 것이다.  
+크게 3가지의 원칙을 기억하면 되는데,  
+**1) 질문** : 테스트 작성을 통해 시스템에 질문. ( 테스트 실패 )
+**2) 응답** : 테스트를 통과하는 코드를 작성해서 질문에 대답. ( 테스트 성공 )
+**3) 정체** : 통합, 불필요한 부분 및 중복 제거 등의 리팩토링.
+**-> 반복 : 위 3가지를 반복을 통해 계속 작성.
+
+
 <br/>
 
 > **테스트케이스는 동등분할이나 경계값 분석을 적극적으로 테스트하자**  
 
--동등분할 :  
+**-동등분할** :  
 같은 결과를 내는 값의 범위를 구분해서 각 대표값으로 테스트 하는 방법.  
 (true, false, 예외 3가지 케이스라면 각각의 입력값이나 상황을 찾아 모든 경우를 테스트)    
 
--경계값분석 :  
+**-경계값분석** :  
 에러는 동등분할 범위의 경계에서 주로 많이 발생한다는 특징을 이용해서 경계의 근처에 있는 값을 이용해 테스트 하는 방법.    
 
 <br/>
@@ -169,7 +174,7 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 > **추가적으로..  Reference참고** 
 
 -[Junit4와 JUnit5에 대해서](https://blog.naver.com/ykycome00/222271373416) 
-: junit5
+: junit5를 사용하면 public 생략 가능, displayname 등 신규 어노테이션도 사용 가능.  
 <img src="https://goodgid.github.io/assets/img/junit/Junit5-Intro-Structure_1.png" width="500" height="500"/>
 
 ```
@@ -190,10 +195,13 @@ Spring Boot에서는 2.2 올리면서 Default로 설정되었다.
 Dependency에서 vintage-engine은 exclude가 되어있다.
 ```
 
--[Mockito](https://blog.naver.com/ykycome00/222277964801)  
-: 
+>-[Mockito](https://velog.io/@max9106/Mockito-Mockito%EB%9E%80)    
 
--[SpringFramework 에도 실제 junit 코드가 있다.(TIP을 얻어가기)](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/test/java/org/springframework/util)  
+: Mock(진짜 객체 처럼 동작하지만 프로그래머가 직접 컨트롤 할 수 있는 객체)을 지원하는 프레임워크.     
+가짜 mock 객체를 만들어 예외를 던지거나 특정 결과값에 대한 조건을 지정하여 테스트가 가능하다.  
+[mockito사용법 - 이해가 쉬운 예제 정리](https://jdm.kr/blog/222)   
+
+>-[SpringFramework 에도 실제 junit 코드가 있다.(TIP을 얻어가기)](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/test/java/org/springframework/util)  
 
 
 <br/>
@@ -203,7 +211,8 @@ Dependency에서 vintage-engine은 exclude가 되어있다.
 코드를 먼저 구현하고 테스트 코드를 주로 만들고 있는데,  
 TDD의 방향성과 비슷하게 **테스트 코드를 중간중간 먼저 만들면서(실패케이스와 단조로운 성공 케이스 and 메소드화) 개발을 진행**해야 할 것 같다. 
 (But, 무조건 TDD대로만 할 필요는 없고 **주어진 일정과 개발 환경을 고려하여 최선의 방법을 찾아 적용하고 개선하는 것이 중요**할 것 같다.)  
-또한 테스트코드를 많이 작성할수록 개발한 **코드에 대한 검증을 통해 자신값을 갖고 코드 리팩토링을 자유롭게** 할 수 있다.(결과적으로는 생산성 향상)  
+또한 테스트코드를 많이 작성할수록 개발한 **코드에 대한 검증을 통해 자신값을 갖고 코드 리팩토링을 자유롭게** 할 수 있다.(결과적으로는 생산성 향상)   
+<br/>
 추천 책 : [켄트백의 테스트 주도 개발](https://aalphaca.tistory.com/41)   
 
 <br/>
@@ -216,5 +225,5 @@ TDD의 방향성과 비슷하게 **테스트 코드를 중간중간 먼저 만�
 [Hamcrest - assertTrue 보다는 assertThat을 사용하자](https://jongmin92.github.io/2020/03/31/Java/use-assertthat/)  
 [Junit에서 Hamcrest를 사용하는 이유](https://codechacha.com/ko/how-to-use-hamcrest-in-junit/)  
 [코드커버리지](https://tecoble.techcourse.co.kr/post/2020-10-24-code-coverage/)  
-[TDD 3가지]()  
+[TDD](https://lee1535.tistory.com/108)    
 [토비의 스프링 2장 총정리](https://junghyungil.tistory.com/154)  
