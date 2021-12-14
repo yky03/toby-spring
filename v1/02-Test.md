@@ -16,8 +16,8 @@ applicationContext 객체를 만들어서 출력값을 찍어서 눈으로 직�
 또는 웹 URI를 통해 직접 접근하여 JSP, CONTROLLER, SERVICE 까지 샘플 코드를 전부 만들어야 코드에 대한 테스트가 가능하다.  
 이러한 방법은 내 기능에 대한 단위별 테스트가 정확히 되지 않고 환경에 따라 테스트 결과가 달라질 수 있으며 생산성도 느려진다.  
 
-[!폭포수 애자일 비교](https://myservername.com/img/other/98/agile-vs-waterfall-which-is-best-methodology-2.png)  
-<
+![폭포수 애자일 비교](https://myservername.com/img/other/98/agile-vs-waterfall-which-is-best-methodology-2.png)  
+<br/>
 
 따라서 테스트는 **작은 코드로 단위 테스트(unit test)** 하여 테스트 하도록 해야 한다.[(폭포수 모델 -> 빠른 피드백의 애자일 모델)](https://universitytomorrow.com/19)  
 수동 확인 작업의 번거로움(단지 콘솔에 출력된 값으로 판단하는건 사람의 몫이기 때문에 위험)을 피하기 위해 [단정문(Assert)](http://junit.sourceforge.net/javadoc/org/junit/Assert.html)을 사용하는것이 좋다.   
