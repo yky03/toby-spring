@@ -242,12 +242,14 @@ TDD의 방향성과 비슷하게 **테스트 코드를 중간중간 먼저 만�
 <br/>
 
 **Q&A**  
-- junit5에서 생략되긴 했지만 왜 junit은 public 접근자만 허용을 했을지에 대해서](https://groups.google.com/g/ksug/c/xpJpy8SCrEE?pli=1)  
+- [junit5에서 생략되긴 했지만 왜 junit은 public 접근자만 허용을 했을지에 대해서](https://groups.google.com/g/ksug/c/xpJpy8SCrEE?pli=1)    
 - 디자인패턴을 공부하는것도 중요하지만 이미 사용중인 코드에 녹여져있는 디자인 패턴을 발견하는 것이 더 중요하다.  
 - build script, build tool 의 편리함에 대해서..  
 - [java final 과 Kotlin 에서 왜 var와 val가 나왔을지에 대한 고민..](https://velog.io/@jojo_devstory/Kotlin-val-var%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)  
 - [JACOCO - test case 일정 기준 충족치 못하면 merger 되지 못하도록 설정도 가능](https://yeoonjae.tistory.com/entry/Project-Gradle-Build-%EC%8B%9C-JaCoCo-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)   
 - [테스트케이스을 주로 어떻게 작성하고 있는가 - given when then 패턴](https://kchanguk.tistory.com/40)  
+
+<br/>
 
 >**-References**     
 
