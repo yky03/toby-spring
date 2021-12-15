@@ -13,10 +13,11 @@
 **-개방 폐쇄 원칙**   
 : 확장에는 자유롭게 열려 있고 변경에는 굳게 닫혀 있다는 객체지향 설계의 핵심 원칙이다.  
 <br/>
-**-메소드 추출**
+**-메소드 추출**  
 : 변화되거나 공통되는 부분을 메소드로 빼서 가독성 및 재사용이 가능하도록 한다.  
 
--[템플릿 메소드 패턴 & 전략 패턴 example](https://github.com/yky03/toby-spring/blob/main/v1/01-ObjectAndDependencyRelationship.md)  
+**-템플릿 메소드 패턴 & 전략 패턴 example**
+: https://github.com/yky03/toby-spring/blob/main/v1/01-ObjectAndDependencyRelationship.md
 <br/>
 
 **-DI 적용을 위해 클라이언트/컨텍스트를 분리하고 전략클래스, 로컬클래스, 익명 내부 클래스(람다로 사용 가능)를 활용하자.**   
