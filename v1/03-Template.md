@@ -1,5 +1,6 @@
 
 >**템플릿**    
+
 : **스프링에 적용된 템플릿 기법을 살펴보고, 이를 적용해 완성도 있는 DAO 코드를 만드는 방법을 알아보자.**  
 
 2장에서는 DBConnection 에 대한 예제로 1장에서 다뤘던 아래의 디자인 패턴들로 try-catch-finally 패턴에서 close   
@@ -22,6 +23,7 @@
 
 
 >**Tip**  
+
 : try catch 보다는 try with resource를 사용하라! -> [이펙티브 자바](https://sabarada.tistory.com/78)  
 
 **[AS-IS]**   
