@@ -20,7 +20,7 @@
 : https://github.com/yky03/toby-spring/blob/main/v1/01-ObjectAndDependencyRelationship.md
 <br/>
 
-**템플릿으로 효과적인 DI 적용을 위한 방법**   
+**-템플릿으로 효과적인 DI 적용을 위한 방법**   
 : 클라이언트/컨텍스트를 분리하고 전략클래스, 로컬클래스, 익명 내부 클래스(람다로 사용 가능)를 활용하자.   
 
 <br/>
@@ -29,6 +29,7 @@
 >**Tip**  
 
 : try catch 보다는 try with resource를 사용하라! -> [이펙티브 자바](https://sabarada.tistory.com/78)  
+
 
 **[AS-IS]**   
 -> [Bubble Style](https://soft.plusblog.co.kr/164)로 가독성 떨어짐.  
