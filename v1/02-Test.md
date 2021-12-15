@@ -173,7 +173,7 @@ expected 값과 actual 값 모두 에러 메시지에 반환된다. 원인을 �
 -**테스트하기 쉬운 코드가 좋은 코드**다.  
 -테스트를 먼저 만들고 테스트를 성공시키는 코드를 만들어가는 **테스트 주도 개발 방법**도 유용하다.  
 -테스트 코드도 애플리케이션 코드와 마찬가지로 적절한 **리팩토링** 필요하다.  
--@Befire, @After를 사용해서 테스트 메소드드르이 공통 준비 작업과 정리 작업을 처리할 수 있다.  
+-@Before, @After를 사용해서 테스트 메소드드르이 공통 준비 작업과 정리 작업을 처리할 수 있다.  
 -스프링 테스트 컨텍스트 프레임워크를 이용하면 테스트 성능을 향상시킬 수 있다.  
 -동일한 설정 파일을 사용하는 테스트는 하나의 애플리케이션 컨텍스트를 공유한다.  
 -@Autowired를 사용하면 컨텍스트의 빈을 오브젝트에 DI 할 수 있다.  
@@ -215,7 +215,7 @@ Dependency에서 vintage-engine은 exclude가 되어있다.
 
 <br/>
 
->-[Mockito](https://velog.io/@max9106/Mockito-Mockito%EB%9E%80)    
+>[Mockito](https://velog.io/@max9106/Mockito-Mockito%EB%9E%80)    
 
 : **Mock(진짜 객체 처럼 동작하지만 프로그래머가 직접 컨트롤 할 수 있는 객체)을 지원하는 프레임워크.**     
 가짜 mock 객체를 만들어 예외를 던지거나 특정 결과값에 대한 조건을 지정하여 테스트가 가능하다.  
@@ -251,7 +251,7 @@ TDD의 방향성과 비슷하게 **테스트 코드를 중간중간 먼저 만�
 
 <br/>
 
->**-References**     
+>**References**     
 
 [Junit의 동작 방식](https://goodgid.github.io/How-JUnit-Works/)   
 [Junit5 구조](https://goodgid.github.io/Junit5-Intro-Structure/)  
