@@ -1,5 +1,5 @@
 
-**>예외**
+>**예외**
 
 **예외처리** : 프로그램 실행 시 발생할 수 있는 **예외에 대비**하는 것으로 프로그램 비정상종료를 막고 실행 상태를 유지하는 것.  
 **에러(error)** : 발생 시 수습할 수 없는 심각한 오류. (컴파일에러, 런타임에러 등)  
@@ -19,7 +19,7 @@
 
 <br/>
 
-**초난감 예외처리 코드**  
+>**초난감 예외처리 코드**  
 
 ```java
 // 1. 아무 처리도 하지 않는 경우
@@ -56,7 +56,7 @@ public void method3() throws Exception {
 <br/>
 
 
-**>Tip**
+>**Tip**
 [e.printStackTrace() 를 사용하지 말자](https://tgyun615.com/59)
 
 ```
@@ -102,7 +102,9 @@ class Test {
 
 <br/>  
 
-**결론은 난감한 예외처리를 하지 말고, 서버에 간단 명료하게 원인을 파악할 수 있는 로그(Slf4j log.error 등)와 함께 상황에 따라 적절한 체크 예외를 던지는것이 좋을 것으로 보인다.  
+>**결론**
+
+: 난감한 예외처리를 하지 말고, 서버에 간단 명료하게 원인을 파악할 수 있는 로그(Slf4j log.error 등)와 함께 상황에 따라 적절한 체크 예외를 던지는것이 좋을 것으로 보인다.  
 ex) id가 중복되었으면 DuplicateUserIdException 클래스를 만들어서 RuntimeException 를 상속받아 예외를 넘겨준다.**    
 
 ```java
@@ -116,7 +118,7 @@ public class DuplicateUserIdException extends RuntimeException {
 <br/>
 
 
-**추가적으로..**  
+>**추가적으로..**  
 [ExceptionHandler 와 ControllerAdvice를 통한 전역 예외 처리](https://tecoble.techcourse.co.kr/post/2021-05-10-controller_advice_exception_handler/)  
 [SLF4J- 추상체를 사용해야 하는 이유](https://inyl.github.io/programming/2017/05/05/slf4j.html)  
 
@@ -126,7 +128,7 @@ public class DuplicateUserIdException extends RuntimeException {
 
 
 
-**>References**  
+>**References**  
 
 [예외처리](https://itmining.tistory.com/8)  
 [throw, throws 차이](https://vitalholic.tistory.com/246)  
