@@ -9,7 +9,7 @@
 <br/>
 
 
-**>Checked Exception & UnChecked Exception**   
+>**Checked Exception & UnChecked Exception**   
 
 
 
@@ -57,11 +57,11 @@ public void method3() throws Exception {
 
 
 >**Tip**
+
 [e.printStackTrace() 를 사용하지 말자](https://tgyun615.com/59)
 
 ```
-*e.printStackTrace()  
-
+*e.printStackTrace() :  
 •예외 발생 당시의 호출스택(Call stack)에 있던 메소드의 정보와 예외 결과를 화면에 출력함  
 •예외 상황을 분석하기 위한 용도로 사용 (개발자에게 디버깅 할 수 있는 힌트를 제공)  
 
@@ -105,7 +105,7 @@ class Test {
 >**결론**
 
 : 난감한 예외처리를 하지 말고, 서버에 간단 명료하게 원인을 파악할 수 있는 로그(Slf4j log.error 등)와 함께 상황에 따라 적절한 체크 예외를 던지는것이 좋을 것으로 보인다.  
-ex) id가 중복되었으면 DuplicateUserIdException 클래스를 만들어서 RuntimeException 를 상속받아 예외를 넘겨준다.**    
+ex) id가 중복되었으면 DuplicateUserIdException 클래스를 만들어서 RuntimeException 를 상속받아 예외를 넘겨준다.  
 
 ```java
 public class DuplicateUserIdException extends RuntimeException {
