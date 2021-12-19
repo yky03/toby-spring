@@ -17,6 +17,7 @@
 
 
 
+<br/>
 
 **초난감 예외처리 코드**  
 
@@ -52,6 +53,9 @@ public void method3() throws Exception {
 }
 ```
 
+<br/>
+
+
 **>Tip**
 [e.printStackTrace() 를 사용하지 말자](https://tgyun615.com/59)
 
@@ -70,6 +74,9 @@ public void method3() throws Exception {
 
 성능을 중시하는 어플리케이션이라면 e.printStackTrace는 사용하지 말자 
 ```
+
+
+<br/>
 
 
 
@@ -105,6 +112,8 @@ public class DuplicateUserIdException extends RuntimeException {
  }
 }
 ```
+
+<br/>
 
 
 **추가적으로..**  
