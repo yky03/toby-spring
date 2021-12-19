@@ -55,13 +55,13 @@ public void method3() throws Exception {
 **>Tip**
 [e.printStackTrace() 를 사용하지 말자](https://tgyun615.com/59)
 
-- e.printStackTrace()  
+```
+*e.printStackTrace()  
 
-•예외 발생 당시의 호출스택(Call stack)에 있던 메소드의 정보와 예외 결과를 화면에 출력함
-•예외 상황을 분석하기 위한 용도로 사용 (개발자에게 디버깅 할 수 있는 힌트를 제공)
+•예외 발생 당시의 호출스택(Call stack)에 있던 메소드의 정보와 예외 결과를 화면에 출력함  
+•예외 상황을 분석하기 위한 용도로 사용 (개발자에게 디버깅 할 수 있는 힌트를 제공)  
 
-
-사용하지 말아야 하는 이유
+사용하지 말아야 하는 이유  
 1.printStackTrace()를 call할 경우 System.err로 쓰여져서 제어하기가 힘듬
 2.printStackTrace()는 java 리플렉션을 사용하여 추적하는 것이라서 많은 오버헤드가 발생할 수 있음
 3.printStackTrace()는 서버에서 스택정보를 취합하기 때문에 서버에 부하가 발생할 수 있음
@@ -69,6 +69,9 @@ public void method3() throws Exception {
 5.printStackTrace()는 관리가 힘듬 (보통 log4j, logback과 같은 로깅 라이브러리를 사용하여, 로그 패턴 및 로그 메세지를 지정 및 콘솔로그 / 파일로그 형태로 관리할 수 있음)
 
 성능을 중시하는 어플리케이션이라면 e.printStackTrace는 사용하지 말자 
+```
+
+
 
 [throw vs throws](https://vitalholic.tistory.com/246)  
 -throw : 메소드 내에서 상위 블럭으러 예외를 던지는 것.(프로그래머의 판단에 따른 처리)  
