@@ -6,7 +6,13 @@
 **예외(exception)** : 예외 처리를 통해 수습할 수 있는 덜 심각한 오류.  
 (예외에는 크게 **Error**(java.lang.Error), **Exception(java.lang.Exception)과 체크예외**, **RuntimeException과 언체크/런타임 예외** 가 있다.)   
 
-**>Checked Exception & UnChecked Exception**  
+<br/>
+
+
+**>Checked Exception & UnChecked Exception**   
+
+
+
 
 
 
@@ -84,6 +90,7 @@ class Test {
 }
 ```
 
+<br/>  
 
 **결론은 난감한 예외처리를 하지 말고, 서버에 간단 명료하게 원인을 파악할 수 있는 로그(Slf4j log.error 등)와 함께 상황에 따라 적절한 체크 예외를 던지는것이 좋을 것으로 보인다.  
 ex) id가 중복되었으면 DuplicateUserIdException 클래스를 만들어서 RuntimeException 를 상속받아 예외를 넘겨준다.**    
@@ -103,7 +110,11 @@ public class DuplicateUserIdException extends RuntimeException {
 
 
 
-**>References  
+<br/>
+
+
+
+**>References**  
 
 [예외처리](https://itmining.tistory.com/8)  
 [throw, throws 차이](https://vitalholic.tistory.com/246)  
