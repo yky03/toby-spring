@@ -11,10 +11,17 @@
 
 >**Checked Exception & UnChecked Exception**   
 
+<img src="https://madplay.github.io/img/post/2019-03-02-java-checked-unchecked-exceptions-1.png" width="600" height="500"/>. 
 
 
+*간단하게 RuntimeException을 상속하지 않는 클래스는 Checked Exception, 반대로 상속한 클래스는 Unchecked Exception.  
 
-
+<img src="https://madplay.github.io/img/post/2019-03-02-java-checked-unchecked-exceptions-2.png" width="600" height="250"/>.  
+  
+-예외를 처리하는 방법 3가지
+1) 예외 복구 : 예외 상황을 파악하고 문제를 해결해서 정상 상태로 돌려놓는 방법.(catch로 잡아서 retry 등)  
+2) 예외 처리 회피 : 예외 처리를 직접 담당하지 않고 호출한 쪽으로 던져 회피하는 방법.(throw e)   
+3) 예외 전환 : 예외 회피와 비슷하게 예외를 던지지만, 그냥 던지지 않고 적절한 예외로 전환해서 넘기는 방법.(throw MyCustomException()). 
 
 
 <br/>
@@ -107,6 +114,9 @@ class Test {
 : 난감한 예외처리를 하지 말고, 서버에 간단 명료하게 원인을 파악할 수 있는 로그(Slf4j log.error 등)와 함께 상황에 따라 적절한 체크 예외를 던지는것이 좋을 것으로 보인다.  
 ex) id가 중복되었으면 DuplicateUserIdException 클래스를 만들어서 RuntimeException 를 상속받아 예외를 넘겨준다.  
 
+다시 정리하면 자바에서 예외는 **RuntimeException을 상속하지 않고 꼭 처리해야 하는 Checked Exception** 과 반대로 명시적으로 처리하지 않아도 되는 **Unchecked Exception** 으로 구분할 수 있다.  
+
+
 ```java
 public class DuplicateUserIdException extends RuntimeException {
  puvlic DuplicateUserIdException(Throwable cause) {
@@ -119,6 +129,7 @@ public class DuplicateUserIdException extends RuntimeException {
 
 
 >**추가적으로..**  
+>
 [ExceptionHandler 와 ControllerAdvice를 통한 전역 예외 처리](https://tecoble.techcourse.co.kr/post/2021-05-10-controller_advice_exception_handler/)  
 [SLF4J- 추상체를 사용해야 하는 이유](https://inyl.github.io/programming/2017/05/05/slf4j.html)  
 
@@ -132,4 +143,6 @@ public class DuplicateUserIdException extends RuntimeException {
 
 [예외처리](https://itmining.tistory.com/8)  
 [throw, throws 차이](https://vitalholic.tistory.com/246)  
+[Checked Excepton, Unchecked Exception](https://madplay.github.io/post/java-checked-unchecked-exceptions). 
+
 
