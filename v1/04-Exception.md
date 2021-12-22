@@ -154,14 +154,15 @@ public class DuplicateUserIdException extends RuntimeException {
 8) 빨리 던지고(예외는 최대한 빨리) 늦게 잡아라(적절한 위치(최상위 최하위 레이어 등)가 아닌곳에서 무리한 예외처리 할필요 x)  
 
 <br/>
+
 **Checked Exception 에서 롤백처리가 되지 않는가에 대해서(중요)**  
 
 구글링을 하면 Checked Exception 은 롤백이 되지 않는다고 정리된 표들이 많은데,    
 이는 특정 출판사에서 출판한 책 내용에서 잘못된(중요 정보 생략)정보로 부터 계속 파생되어 공유되고 있다고 본 것 같습니다.   
 스프링에서는 설정을 변경하면 디폴트 롤백 설정을 변경 할 수 있다고 합니다.   
 
-관련 블로그 내용에서 아래의 내용을 우선 확인하였습니다.
-( https://www.notion.so/3565a9689f714638af34125cbb8abbe8 ​)
+관련 블로그 내용에서 아래의 내용을 우선 확인하였습니다.  
+( https://www.notion.so/3565a9689f714638af34125cbb8abbe8 ​)  
 
   
 -> java와 spring 개념이 혼용되며 혼란을 야기함.  
