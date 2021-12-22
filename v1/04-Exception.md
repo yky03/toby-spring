@@ -143,8 +143,6 @@ public class DuplicateUserIdException extends RuntimeException {
 
 >**Q&A**
 
-[이펙티브자바 - 가능한한 실패 원자적으로 만들라](https://madplay.github.io/post/strive-for-failure-atomicity)  
-
 -예외 Best Practice 8가지  
 1) THROWABLE(모든 예외의 상위 클래스 - 에러까지 잡는다)예외 처리로 하지 마라.  
 2) 입력을 빨리 검증하라 (예외처리 최소화)  
@@ -155,6 +153,7 @@ public class DuplicateUserIdException extends RuntimeException {
 7) 예외로그를 남기고 똑같은 예외를 한번 더 던지지마라  
 8) 빨리 던지고(예외는 최대한 빨리) 늦게 잡아라(적절한 위치(최상위 최하위 레이어 등)가 아닌곳에서 무리한 예외처리 할필요 x)  
 
+<br/>
 **Checked Exception 에서 롤백처리가 되지 않는가에 대해서(중요)**  
 
 구글링을 하면 Checked Exception 은 롤백이 되지 않는다고 정리된 표들이 많은데,    
@@ -178,8 +177,12 @@ https://techblog.woowahan.com/2606/
 
 **실패 원자성을 갖도록 노력하자**  
 https://brunch.co.kr/@oemilk/178  
+[이펙티브자바 - 가능한한 실패 원자적으로 만들라](https://madplay.github.io/post/strive-for-failure-atomicity)  
 
-<br/><br/><br/>
+**멀티 쓰레드 환경에서 동시성 제어**  
+https://deveric.tistory.com/104
+
+<br/><br/>
 
 >**References**  
 
