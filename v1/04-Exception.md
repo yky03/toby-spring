@@ -155,6 +155,27 @@ public class DuplicateUserIdException extends RuntimeException {
 7) 예외로그를 남기고 똑같은 예외를 한번 더 던지지마라  
 8) 빨리 던지고(예외는 최대한 빨리) 늦게 잡아라(적절한 위치(최상위 최하위 레이어 등)가 아닌곳에서 무리한 예외처리 할필요 x)  
 
+**Checked Exception 에서 롤백처리가 되지 않는가에 대해서(중요)**  
+
+구글링을 하면 Checked Exception 은 롤백이 되지 않는다고 정리된 표들이 많은데,    
+이는 특정 출판사에서 출판한 책 내용에서 잘못된(중요 정보 생략)정보로 부터 계속 파생되어 공유되고 있다고 본 것 같습니다.   
+스프링에서는 설정을 변경하면 디폴트 롤백 설정을 변경 할 수 있다고 합니다.   
+
+관련 블로그 내용에서 아래의 내용을 우선 확인하였습니다.
+( https://www.notion.so/3565a9689f714638af34125cbb8abbe8 ​)
+
+  
+-> java와 spring 개념이 혼용되며 혼란을 야기함.  
+-> spring의 기본적인 트랜잭션 설정은 checked 는 롤백하지 않고, unchecked는 롤백한다.  
+   ​- but. 기본적인 설정일 뿐 변경할 수 있다.  
+
+  
+추가적으로 설정을 변경하여 checked exception 에서 설정을 변경하여 롤백 처리를 한 블로그들입니다.  
+http://wonwoo.ml/index.php/post/1542  
+https://techblog.woowahan.com/2606/  
+
+<br/>
+
 
 
 >**References**  
