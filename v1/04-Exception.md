@@ -129,13 +129,31 @@ public class DuplicateUserIdException extends RuntimeException {
 
 
 >**추가적으로..**  
->
-[ExceptionHandler 와 ControllerAdvice를 통한 전역 예외 처리](https://tecoble.techcourse.co.kr/post/2021-05-10-controller_advice_exception_handler/)  
-[SLF4J- 추상체를 사용해야 하는 이유](https://inyl.github.io/programming/2017/05/05/slf4j.html)  
+
+[ExceptionHandler 와 ControllerAdvice를 통한 전역 예외 처리](https://tecoble.techcourse.co.kr/post/2021-05-10-controller_advice_exception_handler/)
+[ExceptionHandler 단일, ControllerAdvice 전역](https://sunghs.tistory.com/121)  
+[SLF4J - 추상체를 사용해야 하는 이유](https://inyl.github.io/programming/2017/05/05/slf4j.html)  
+[SLF4J - appender](https://enai.tistory.com/36)  
+
 
 
 
 <br/>
+
+
+>**Q&A**
+
+[이펙티브자바 - 가능한한 실패 원자적으로 만들라](https://madplay.github.io/post/strive-for-failure-atomicity)  
+
+-예외 Best Practice 8가지  
+1) THROWABLE(모든 예외의 상위 클래스 - 에러까지 잡는다)예외 처리로 하지 마라.  
+2) 입력을 빨리 검증하라 (예외처리 최소화)  
+3) 예외로 흐름을 제어하지 마라(예외 에서 분기)   
+4) 하나의 예외로그는 한줄의 예외로그로 제어(키값으로 제어 가능 GREP)    
+5) 예외를 감싸서 던져라(예외전파(프로파제이션),예외체이닝,예외래핑)  
+6) FINALLY 블록에서 예외 던지지 마라 ? 이전까지 스택트레이스 기록 불가능  
+7) 예외로그를 남기고 똑같은 예외를 한번 더 던지지마라  
+8) 빨리 던지고(예외는 최대한 빨리) 늦게 잡아라(적절한 위치(최상위 최하위 레이어 등)가 아닌곳에서 무리한 예외처리 할필요 x)  
 
 
 
