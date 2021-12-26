@@ -189,7 +189,7 @@ https://deveric.tistory.com/104
 
 [예외처리](https://itmining.tistory.com/8)  
 [throw, throws 차이](https://vitalholic.tistory.com/246)  
-[Checked Excepton, Unchecked Exception](https://madplay.github.io/post/java-checked-unchecked-exceptions). 
-[예외처리](https://velog.io/@sangmin7648/Java-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%BF%80%ED%8C%81)  
+[Checked Excepton, Unchecked Exception](https://madplay.github.io/post/java-checked-unchecked-exceptions)   
+[예외처리꿀팁](https://velog.io/@sangmin7648/Java-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%BF%80%ED%8C%81)   
 
 
