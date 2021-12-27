@@ -87,9 +87,16 @@ finalize
   - 트랜잭션이 완료될 때까지 SELECT 문장이 사용하는 모든 데이터에 Shared Lock이 걸리므로 다른 사용자는 그 영역에 해당되는 데이터에 수정 및 입력이 불가능하다.
 
 * DB 별 default isolation
- - MSSQL : READ COMMITTED (WITH(NOLOCK) 으로 select 할 경우의 격리수준(Isolation Level)은 Read Uncommitted)
+
  - MYSQL : REPEATABLE READ
- - ORACLE : READ COMMITTED
+ : 트랜잭션이 시작되기 전(쿼리가 시작되기 전이 아닌) commit 된 결과를 참조합니다.
+ 
+ - ORACLE : READ COMMITTED 
+ : 쿼리가 시작되기 전 다른 트랜잭션에서 commit 된 결과를 참조할 수 있으며 동일 트랜잭션 상에서 동일한 쿼리문에 대해 서로 다른 결과를 조회(Phantom-Read)할 수 있습니다.
+
+ - MSSQL : READ COMMITTED 
+ : (WITH(NOLOCK) 으로 select 할 경우의 격리수준(Isolation Level)은 Read Uncommitted)
+ 
 ```
 
 **-트랜잭션 전파 옵션**  
@@ -134,3 +141,4 @@ finalize
 [트랜잭션 격리 수준](https://snow-line.tistory.com/145)   
 [트랜잭션 전파 옵션](https://snow-line.tistory.com/146)   
 [MSSQL with(nolock)](https://ryean.tistory.com/32)  
+[Read committed VS Repeatable read](https://corekms.tistory.com/entry/Read-committed-VS-Repeatable-read)  
