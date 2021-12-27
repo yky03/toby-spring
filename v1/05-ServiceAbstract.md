@@ -87,7 +87,7 @@ finalize
   - 트랜잭션이 완료될 때까지 SELECT 문장이 사용하는 모든 데이터에 Shared Lock이 걸리므로 다른 사용자는 그 영역에 해당되는 데이터에 수정 및 입력이 불가능하다.
 
 * DB 별 default isolation
- - MSSQL : READ COMMITTED
+ - MSSQL : READ COMMITTED (WITH(NOLOCK) 으로 select 할 경우의 격리수준(Isolation Level)은 Read Uncommitted)
  - MYSQL : REPEATABLE READ
  - ORACLE : READ COMMITTED
 ```
@@ -133,3 +133,4 @@ finalize
 [java11 oracle document](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html)   
 [트랜잭션 격리 수준](https://snow-line.tistory.com/145)   
 [트랜잭션 전파 옵션](https://snow-line.tistory.com/146)   
+[MSSQL with(nolock)](https://ryean.tistory.com/32)  
