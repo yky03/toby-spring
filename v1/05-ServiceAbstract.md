@@ -111,7 +111,7 @@ finalize
  3) REQUIRES_NEW
    - 부모 트랜잭션을 무시하고 무조건 새로운 트랜잭션이 생성된다.
 
- 4) MADATORY
+ 4) MANDATORY
   - REQUIRED와 비슷하게 이미 시작된 트랜잭션이 있으면 참여한다.
   - 트랜잭션이 없을 경우에는 예외를 발생한다.
   - 혼자서는 독립적으로 트랜잭션을 진행하면 안되는 경우에 사용한다.
@@ -131,7 +131,7 @@ finalize
 
 <br/>
 
->**References**  
+>**References** 
 
 [서비스 추상화 정리](https://xlffm3.github.io/spring%20&%20spring%20boot/toby-spring-chapter5/)   
 [우아한형제들 Java Enum 활용기](https://techblog.woowahan.com/2527/)  
