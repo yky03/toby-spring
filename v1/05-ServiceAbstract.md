@@ -131,6 +131,14 @@ finalize
 
 <br/>
 
+>**Q&A**  
+
+[-트랜잭션 ACID](https://covenant.tistory.com/85)  
+[-testing-stub, mock, spy 차이](https://luran.me/343)  
+[상태검증 assertThat, 행위검증 verify](https://joont92.github.io/tdd/%EC%83%81%ED%83%9C%EA%B2%80%EC%A6%9D%EA%B3%BC-%ED%96%89%EC%9C%84%EA%B2%80%EC%A6%9D-stub%EA%B3%BC-mock-%EC%B0%A8%EC%9D%B4/)  
+[으뜸별-테스트대역](https://beststar-1.tistory.com/29)  
+
+
 >**References** 
 
 [서비스 추상화 정리](https://xlffm3.github.io/spring%20&%20spring%20boot/toby-spring-chapter5/)   
