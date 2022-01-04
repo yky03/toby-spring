@@ -6,6 +6,8 @@
 여기서 모듈화란 어떤 공통된 로직이나 기능을 하나의 단위로 묶는 것을 말한다.  
 
 
+<br/>
+
 >**AOP의 주요 개념**  
 
 **Aspect** : **여러 객체에 공통적으로 적용되는 관심사**항으로써 위에서 설명한 흩어진 관심사를 모듈화 한 것. 주로 부가기능을 모듈화함. 
@@ -20,6 +22,8 @@
 (Advice를 비즈니스 로직 코드에 삽입하는것을 의미함)  
 **Advisor** : SpringAOP에서만 사용되는 특별한 용어로 Advice + PointCut  
 
+
+<br/>
 
 
 >**Spring AOP와 AspectJ 비교하기**  
@@ -41,6 +45,9 @@ AspectJ는 세가지 방식의 Weaving을 사용할 수 있습니다.
 
 Spring Aop는 런타임 Weaving을 사용합니다.  
 -런타임 시점 Weaving  
+
+
+<br/>
 
 
 >**프록시패턴**  
@@ -91,6 +98,11 @@ public static void main(String[] args) {
 
 인터페이스를 중간에 두어 구체 클래스들에게 영향을 받지 않도록 설계하였고,  
 직접 접근하지 않고 Proxy를 통해서 한번 더 우회해서 접근하도록 객체 지향적으로 설계.    
+
+
+<br/>
+
+
 
 >**데코레이터패턴**  
 
@@ -178,6 +190,10 @@ public class DecoratedWindowTest {
     }
 }
 ```
+
+
+<br/>
+
 
 
 >**References**  
