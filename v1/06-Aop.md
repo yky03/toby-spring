@@ -197,6 +197,7 @@ public class DecoratedWindowTest {
 
 
 >**References**  
+
 [토비스프링 AOP 정리](https://haviyj.tistory.com/26?category=695904)  
 [스프링 AOP 총정리](https://engkimbs.tistory.com/746)  
 [프록시패턴 정의](https://limkydev.tistory.com/79)  
