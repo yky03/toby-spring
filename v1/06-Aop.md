@@ -199,6 +199,11 @@ public class DecoratedWindowTest {
 
 [Filter, Interceptor, Aop 에 대한 이해](https://goddaehee.tistory.com/154)  
 [다이내믹 프로시 패턴과 리플렉션에 대한 이해](https://codechacha.com/ko/reflection/)  
+[위빙에 대한 정확한 이해](https://jaehun2841.github.io/2018/07/22/2018-07-22-spring-aop4/)  
+: 위빙(Weaving) 이란? Aspect 클래스에 정의 한 Advice 로직을 타깃(Target)에 적용하는 것을 의미한다. 위빙 방법으로는 RTW, CTW, LTW 3가지가 있다.  
+[@Around Example](https://howtodoinjava.com/spring-aop/aspectj-around-annotation-example/)  
+: Spring Aop 는 @Transactional, @Cacheable 을 실무에서 많이 쓰며, AspectJ는 @Aspect @Around Custom Annotation 으로 로깅 어노테이션을 구현하여 활용이 가능하다.  
+
 
 ![AOP흐름](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile22.uf.tistory.com%2Fimage%2F9983FB455BB4E5D30C7E10)  
 
