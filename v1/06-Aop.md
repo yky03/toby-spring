@@ -195,10 +195,19 @@ public class DecoratedWindowTest {
 <br/>
 
 
+>**Q&A**  
+
+[Filter, Interceptor, Aop 에 대한 이해](https://goddaehee.tistory.com/154)  
+[다이내믹 프로시 패턴과 리플렉션에 대한 이해](https://codechacha.com/ko/reflection/)  
+
+![AOP흐름](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile22.uf.tistory.com%2Fimage%2F9983FB455BB4E5D30C7E10)  
+
+
 
 >**References**  
 
 [토비스프링 AOP 정리](https://haviyj.tistory.com/26?category=695904)  
+[우아한형제들 AOP](https://www.youtube.com/results?search_query=%EC%9A%B0%EC%95%84%ED%95%9C%ED%98%95%EC%A0%9C%EB%93%A4+aop)  
 [스프링 AOP 총정리](https://engkimbs.tistory.com/746)  
 [프록시패턴 정의](https://limkydev.tistory.com/79)  
 [백기선님강의-프록시패턴](https://www.youtube.com/watch?v=tes_ekyB6U8)  
