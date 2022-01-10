@@ -6,8 +6,7 @@
   
 추가적으로 아래의 AOP개념과 용어를 덧붙여 설명하면 Best..   
 
-aop 개념은 IOC/DI 개념과 더불어 스프링에서 아주 중요한 핵심 개념중의 하나이기 때문에, 스프링 공식 문서를 통해 AOP 정의에 대해 다시 짚어보고,  
-개념과 용어에 익숙해지기 위해 머릿속에 그림을 그리면서 다시 정리를 해보자.   
+aop 개념은 IOC/DI 개념과 더불어 스프링에서 아주 중요한 핵심 개념중의 하나이기 때문에, 스프링 공식 문서를 통해 AOP 정의에 대해 다시 짚어보고, 개념과 용어에 익숙해지기 위해 머릿속에 그림을 그리면서 다시 정리를 해보자.   
 
 ```
 Joinpoint: A joinpoint is a candidate point in the Program Execution of the application where an aspect can be plugged in. This point could be a method being called, an exception being thrown, or even a field being modified. These are the points where your aspect’s code can be inserted into the normal flow of your application to add new behavior.
