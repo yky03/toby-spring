@@ -86,9 +86,10 @@ CGLIB 프록시 (예를 들어, 인터페이스에 의해 구현 된 것뿐만 �
 ```
 
 *But, spring boot는 인터페이스로 구현해도 아래의 옵션이 디폴트기 때문에 AOP구현시 내부적으로 cglib 방식으로 동작한다.  
-spring.aop.auto(default true) 
+```
+spring.aop.auto(default true)  
 spring.aop.proxy-target-class(default true)  
-
+```
 
 <br/>
 
