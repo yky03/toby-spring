@@ -50,6 +50,8 @@ Spring 에서는 설정을 통해 일반 클래스에 넣는 방식(schema-based
 : Aspect를 Target object에 적용하는것. 컴파일시, 로드타입시, 런타임시 적용시킬수 있으나 Spring에서는 런타임때 적용시킵니다.  
 
 
+<br/>
+
 >**AOP설정**  
 
 강제로 CGLIB 프록시를 사용하려면 요소의 proxy-target-class 속성 값을 true로 설정
