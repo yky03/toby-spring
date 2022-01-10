@@ -4,6 +4,9 @@
 면접에서 스프링 AOP 가 무엇이냐고 묻는다면?  
 : AOP는 관점 지향 프로그래밍의 약자로써 기존의 OOP에서 기능별로 클래스를 분리했음에도 불구하고, 여전히 트랜잭션, 자원해제, 성능테스트, 메소드처럼 공통적으로 반복되는 중복코드가 발생하는 단점이 생겨서 이를 해결할 수 있도록 개발 코드에서는 비즈니스 로직에 집중하고, 실행 시 **비즈니스 로직의 앞과 뒤에서 원하는 지점에 해당 공통 관심사를 수행**할 수 있게 하면서 **중복 코드를 줄일 수 있는 방식**이라고 답한다.   
   
+에스펙트란 무엇일까? 에스펙트는 객체지향 어어의 클래스와 비슷한 개념이라고 생각하면 이해가 쉽다.  
+에스펙트는 그 자체로 애플리케이션의 도메인 로직을 담은 핵심 기능은 아니지만, 많은 오브젝트에 걸쳐서 필요한 부가기능을 추상화 해놓은 것이다.  
+  
 추가적으로 아래의 AOP개념과 용어를 덧붙여 설명하면 Best..   
 
 aop 개념은 IOC/DI 개념과 더불어 스프링에서 아주 중요한 핵심 개념중의 하나이기 때문에, 스프링 공식 문서를 통해 AOP 정의에 대해 다시 짚어보고, 개념과 용어에 익숙해지기 위해 머릿속에 그림을 그리면서 다시 정리를 해보자.   
@@ -91,6 +94,41 @@ spring.aop.auto(default true)
 spring.aop.proxy-target-class(default true)  
 ```
 
+**-@Configurable 과 LTW(Low Time Weaver)**  
+
+: 스프링프레임워크 2.5 부터 지원된 Entity와 같은 도메인 모델에서 DI를 받기 위한 기술.  
+특정 도메인 객체에 @Configurable 를 선언하고 도메인 내 필드에 @Autowired를 이용해 의존성을 주입시키면 Spring bean이 주입되는 설정이 가능함.  
+
+```java
+// code
+@Data
+@Configurable
+public class Entity {
+    @Autowired
+    private EntityRepository repository;
+    
+    private Long entityNo;
+    private String description;
+}
+
+```
+
+``java
+// test code
+@Test
+public void newEntity() {
+    Entity entity = new Entity();
+    assertThat(entity.getRepository(), is(notNullValue()));
+}
+```
+
+-> DDD를 지원하기 위한 작업.(커맨드 패턴 등 활용)  
+
+DDD란?
+
+
+
+
 <br/>
 
 >**References**  
@@ -98,9 +136,10 @@ spring.aop.proxy-target-class(default true)
 [스프링 면접 질문](https://kim6394.tistory.com/161)  
 [스프링 aop 공식 문서](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#aop)  
 [스택오버플로우 joinpoint and pointcut diffrence](https://stackoverflow.com/questions/15447397/spring-aop-whats-the-difference-between-joinpoint-and-pointcut)  
-[스프링 aop 원리 jdk dynamic proxy(reflection기반) & cglib proxy(상속기반)]  
+[스프링 aop 원리 jdk dynamic proxy(reflection기반) & cglib proxy(상속기반)](https://huisam.tistory.com/entry/springAOP)   
 [스프링 aop proxy-target-class 속성 설정](https://seungwoo0429.tistory.com/26)  
 [스프링 aop CGLIB PROXY 방식 동작 이유](https://multifrontgarden.tistory.com/282)  
 [Spring Boot는 왜 CGLIB 방식을 디폴트 전략으로 선택했을까?](http://wonwoo.ml/index.php/post/1708)  
 [스프링 aop 개념과 트랜잭션 처리](https://goodncuteman.tistory.com/25)  
 [AOP 활용 예제](https://chinggin.tistory.com/516)  
+[Spring @Configurable](https://github.com/redutan/spring-configurable)  
