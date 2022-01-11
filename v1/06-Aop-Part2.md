@@ -152,7 +152,9 @@ public void newEntity() {
 실제 코드로 구현 가능한 현실성 있는 도메인 모델 분석과 그것을 추상화하는 설계이다.  
 "설계를 하라, 그 다음에 구축하라"가 아니다.  
 
-<img src="https://incheol-jung.gitbook.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-M5HOStxvx-Jr0fqZhyW%2F-MHWSTuKJu8Xj7tn1c0d%2F-MHX2NdDAbuPhvW84apt%2F222.jpg?alt=media&token=56305310-d8ef-4748-ba03-81c002893cad" />
+<img src="https://incheol-jung.gitbook.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-M5HOStxvx-Jr0fqZhyW%2F-MHWSTuKJu8Xj7tn1c0d%2F-MHX2NdDAbuPhvW84apt%2F222.jpg?alt=media&token=56305310-d8ef-4748-ba03-81c002893cad" />  
+
+<img src="https://vaadin.com/static/content/learning-center/learn/tutorials/ddd/03__ddd_and_hexagonal/images/hexagonal.png" />  
 
 
 <br/>
