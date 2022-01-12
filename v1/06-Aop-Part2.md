@@ -27,7 +27,8 @@ The following image can help you understand Advice, PointCut, Joinpoints. enter 
 
 
 
-**-AOP 개념과 용어**
+**-AOP 개념과 용어**  
+
 **Aspect**	
 : 여러 객체를 관통하는 **‘공통 관심 사항’을 구현**한것을 의미합니다.  
 Spring 에서는 설정을 통해 일반 클래스에 넣는 방식(schema-based approach) 혹은 어노테이션을 활용한 방식으로 클래스에 aspect를 줄수 있습니다.  (JointPoint와 PointCut을 묶어서 Aspect로 관리)  
@@ -134,7 +135,7 @@ public void newEntity() {
 <img src="https://vaadin.com/static/content/learning-center/learn/tutorials/ddd/03__ddd_and_hexagonal/images/hexagonal.png" />
 
 
-**특징**  
+**-특징**  
 
 도메인 그 자체와 도메인 로직에 초점을 맞춘다. 
 일반적으로 많이 사용하는 **데이터 중심의 접근법을 탈피**해서 순수한 도메인의 모델과 로직에 집중하는 것을 말한다.  
