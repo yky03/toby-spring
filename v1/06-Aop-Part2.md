@@ -165,7 +165,7 @@ public void newEntity() {
     
 [CGLib vs jdk proxy 성능 비교 테스트](https://www.whiteship.me/jdk-6-0-ec-97-90-ec-84-9c-cglib-ea-b3-bc-jdk--ed-94-84-eb-a1-9d-ec-8b-9c--ec-84-b1-eb-8a-a5--eb-b9-84-ea-b5-90/)  
 트랜잭션 처리 & @Transactional    
-스프링 공식 문서 공부 방법  
+스프링 공식 문서 공부 방법 -> 직접 독해, 크롬 번역, 원서 번역 블로그와 비교, 키워드 뽑고 코드 위주로 공부  
 
 <br/>
 
