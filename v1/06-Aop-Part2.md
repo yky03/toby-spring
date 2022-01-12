@@ -1,4 +1,4 @@
-**-주제 : AOP 개념 다시 정리, AOP 설정 코드, DDD**  
+**-주제 : AOP 개념 다시 정리,  AOP 설정 코드,  DDD**  
 
 <br/>
 
@@ -129,7 +129,7 @@ public void newEntity() {
 
 -> DDD를 지원하기 위한 작업.(커맨드 패턴 등 활용)  
 
-**DDD란?**  
+**-DDD란?**  
 : DDD(Domain-Driven Design) 또는 도메인 주도 설계라고 부른다. 도메인 패턴을 중심에 놓고 설계하는 방식을 일컫는다.  
 
 <img src="https://vaadin.com/static/content/learning-center/learn/tutorials/ddd/03__ddd_and_hexagonal/images/hexagonal.png" />
