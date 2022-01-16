@@ -14,8 +14,21 @@
 : 개발자가 지정한 SQL, 저장프로시저 그리고 몇가지 고급 매핑을 지원하는 퍼시스턴스 프레임워크 Java Persistence Framework 중 하나 입니다. 
 퍼시스턴스 프레임워크란 데이터의 저장, 조회, 수정, 삭제를 다루는 클래스 및 설정파일들의 집합을 말합니다.  
 
+<br/>
+
+>**인터페이스 분리 원칙**  
+
+: 인터페이스를 사용하는 클라이언트 기준으로 분리해야 되는 원칙.[예제참고](https://brownbears.tistory.com/580)  
+Vehicle, Bicycle, Flight, Car method 예제 생각.    
+Vehicle 인터페이스 하나로 구현한다면, drive, fly, ride를 전부 구현해야해서 원칙에 위반된다.  
+AbstractBicycle, AbstractFlight, AbstractCar 역할별로 인터페이스를 만들어서 구분해서 구현 하는 방법이 있다.    
+
+>**Multi Thread 환경에서 동시성 제어를 하는 방법**   
+
+>**내장형 db h2 활용 방법**     
 
 
+<br/>
 
 >**References**  
 
@@ -25,6 +38,6 @@
 [Spring Data Jpa, Jpa, Hibernate 차이](https://suhwan.dev/2019/02/24/jpa-vs-hibernate-vs-spring-data-jpa/)  
 [우아한형제들의 QueryDsl 사용법](https://velog.io/@youngerjesus/%EC%9A%B0%EC%95%84%ED%95%9C-%ED%98%95%EC%A0%9C%EB%93%A4%EC%9D%98-Querydsl-%ED%99%9C%EC%9A%A9%EB%B2%95)  
 [PostConstruct(DI까지 완료 후 초기화)와 빈 생명주기 메서드와 실행순서](https://madplay.github.io/post/spring-bean-lifecycle-methods)  
-[인터페이스 분리 법칙 - ISP](https://o-o-wl.tistory.com/31)  
+[인터페이스 분리 원칙 - ISP](https://brownbears.tistory.com/580)   
 [ConcurrentHashMap이란](https://devlog-wjdrbs96.tistory.com/269)  
 [Multi Thread 환경에서 동시성 제어하는 방법](https://deveric.tistory.com/104)  
