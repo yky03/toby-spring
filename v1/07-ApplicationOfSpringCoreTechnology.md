@@ -18,7 +18,7 @@
 : JDBC Connectivty 의 약자로 자바에서 데이터베이스 프로그래밍을 하기 위해 사용하는 API로써, JDBC드라이버를 연동하여 데이버베이스에 접근이 가능하다.  
 
 **-JMS**  
-: Java Message Service이다. [참고](https://unabated.tistory.com/entry/JNDI-JTA-JTS-JMS)  
+: Java Message Service로써 비동기식 메시징을 위한 표준 API이다 목적지로는 큐와 토픽 모델이 있다.  
 
 <br/>
 
@@ -31,7 +31,15 @@ AbstractBicycle, AbstractFlight, AbstractCar 역할별로 인터페이스를 만
 
 >**Multi Thread 환경에서 동시성 제어를 하는 방법**   
 
+
+
+<br/>
+
+
+
 >**내장형 db h2 활용 방법**     
+
+
 
 
 <br/>
