@@ -14,6 +14,12 @@
 : 개발자가 지정한 SQL, 저장프로시저 그리고 몇가지 고급 매핑을 지원하는 퍼시스턴스 프레임워크 Java Persistence Framework 중 하나 입니다. 
 퍼시스턴스 프레임워크란 데이터의 저장, 조회, 수정, 삭제를 다루는 클래스 및 설정파일들의 집합을 말합니다.  
 
+**-JDBC**  
+: JDBC Connectivty 의 약자로 자바에서 데이터베이스 프로그래밍을 하기 위해 사용하는 API로써, JDBC드라이버를 연동하여 데이버베이스에 접근이 가능하다.  
+
+**-JMS**  
+: Java Message Service이다. [참고](https://unabated.tistory.com/entry/JNDI-JTA-JTS-JMS)  
+
 <br/>
 
 >**인터페이스 분리 원칙**  
@@ -33,6 +39,7 @@ AbstractBicycle, AbstractFlight, AbstractCar 역할별로 인터페이스를 만
 >**References**  
 
 [스프링이론기초 oxm, orm](https://m.blog.naver.com/good_ray/221328422224)  
+[JNDI, JTA, JTS, JMS](https://unabated.tistory.com/entry/JNDI-JTA-JTS-JMS)  
 [JPA와 MYBATIS 차이](https://dreaming-soohyun.tistory.com/entry/JPA%EC%99%80-MyBatis%EC%9D%98-%EC%B0%A8%EC%9D%B4-ORM%EA%B3%BC-SQL-Mapper)  
 [자바 퍼시스턴스 프레임워크란](https://jiwontip.tistory.com/57)  
 [Spring Data Jpa, Jpa, Hibernate 차이](https://suhwan.dev/2019/02/24/jpa-vs-hibernate-vs-spring-data-jpa/)  
