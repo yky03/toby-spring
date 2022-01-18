@@ -31,6 +31,7 @@ AbstractBicycle, AbstractFlight, AbstractCar 역할별로 인터페이스를 만
 
 
 >**ConcurrentHashMap 사용하기**  
+
 일반적인 HashMap은 멀티쓰레드 환경에서 의도치 않은 결과가 발생할 수 있다. Collections.synchronizedMap()과 같이 외부에서 동기화해주는 메서드가 개발되어 있지만 모든 작업을 동기화하게 되면 많은 요청이 몰릴 때 성능 하락은 피할 수 없다. 대신 동기화된 해시데이터 조작에 최적화된 ConcurrentHashMap이 대안이 될 수 있다.  
 
 전체 데이터에 락을 걸지 않는다.  
