@@ -39,6 +39,12 @@ AbstractBicycle, AbstractFlight, AbstractCar 역할별로 인터페이스를 만
 내장형 데이터베이스
 그러나 ConcurrentHashMap은 변경이 자주 일어나는 환경에선 동기화의 성능하락에서 자유로울 수 없다. 그래서 SQL을 담는 DB같은 것을 설계해볼 순 있지만, 관계형 데이터베이스 스키마를 구현하는 것은 배보다 배꼽이 더 커질 수가 있다. 그래서 [**내장형 DB(H2등)**](https://datamoney.tistory.com/214)를 고려해볼 수 있다.  
 
+```java
+@Sql("/generate_schema.sql")
+public class MyTest {
+}
+```
+
 내장형 DB(Embedded DB)는 인메모리 DB라고 생각하면 좋다. Persistence는 보장되지 않지만 메모리에 저장되어 빠른 IO가 가능하다. 또한 등록, 수정, 검색, 격리수준, 트랜잭션, 최적화된 락킹 등 DB가 제공할 수 있는 것들은 모두 제공할 수 있다. SQL문으로 질의가 가능한 것은 덤이다.  
 
 ++추가학습  
