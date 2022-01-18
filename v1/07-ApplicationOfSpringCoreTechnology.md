@@ -29,7 +29,8 @@ Vehicle, Bicycle, Flight, Car method 예제 생각.
 Vehicle 인터페이스 하나로 구현한다면, drive, fly, ride를 전부 구현해야해서 원칙에 위반된다.  
 AbstractBicycle, AbstractFlight, AbstractCar 역할별로 인터페이스를 만들어서 구분해서 구현 하는 방법이 있다.    
 
-**ConcurrentHashMap 사용하기**  
+
+>**ConcurrentHashMap 사용하기**  
 일반적인 HashMap은 멀티쓰레드 환경에서 의도치 않은 결과가 발생할 수 있다. Collections.synchronizedMap()과 같이 외부에서 동기화해주는 메서드가 개발되어 있지만 모든 작업을 동기화하게 되면 많은 요청이 몰릴 때 성능 하락은 피할 수 없다. 대신 동기화된 해시데이터 조작에 최적화된 ConcurrentHashMap이 대안이 될 수 있다.  
 
 전체 데이터에 락을 걸지 않는다.  
@@ -47,7 +48,7 @@ public class MyTest {
 
 내장형 DB(Embedded DB)는 인메모리 DB라고 생각하면 좋다. Persistence는 보장되지 않지만 메모리에 저장되어 빠른 IO가 가능하다. 또한 등록, 수정, 검색, 격리수준, 트랜잭션, 최적화된 락킹 등 DB가 제공할 수 있는 것들은 모두 제공할 수 있다. SQL문으로 질의가 가능한 것은 덤이다.  
 
-++추가학습  
+**-추가학습**    
 concurrent패키지에 존재하는 컬랙션들은 락을 사용할 때 발생하는 성능 저하를 최소한으로 만들어두었습니다. 락을 여러 개로 분할하여 사용하는 Lock Striping 기법을 사용하여 동시에 여러 스레드가 하나의 자원에 접근하더라도 동시성 이슈가 발생하지 않도록 도와줍니다. 
 
 ```java   
