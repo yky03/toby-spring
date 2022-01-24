@@ -170,4 +170,5 @@ META-INF 아래 spring.factories 파일이 존재하는데 org.springframework.b
 
 [스프링이란](https://hoonmaro.tistory.com/32)  
 [@SpringBootApplication](https://n1tjrgns.tistory.com/231)  
-
+[스프링 어노테이션 총정리](https://velog.io/@gillog/Spring-Annotation-%EC%A0%95%EB%A6%AC)  
+[롬복이란](https://bcp0109.tistory.com/224)  
