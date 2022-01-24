@@ -3,7 +3,7 @@
 
 : 자바 엔터프라이즈 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크.  
 
-
+<br/>
 
 >**경량화**  
 
@@ -21,7 +21,7 @@
 
 -즉, 기존에 비해 빠르고 간편하게 애플리케이션을 개발할 수 있어 생산성이 뛰어난 프레임워크다.  
 
-
+<br/>
 
 >**스프링 기능**  
 
@@ -49,6 +49,7 @@
 -오픈소스  
 -> 스프링은 아파치 라이선스 2.0을 따르므로 무료이다.  
 
+<br/>
 
 >**SpringBootApplication Annotation 분석**  
 
@@ -137,6 +138,8 @@ public @interface SpringBootApplication {
 
 ```
 
+<br/>
+
 *중요 어노테이션 -> @ComponentScan, @EnableAutoConfiguration  
 ( 왜냐하면 Bean이 @ComponentScan과 @EnableAutoConfiguration에 의해 두 단계로 나눠서 읽히기 떄문 )  
 
@@ -154,11 +157,14 @@ META-INF 아래 spring.factories 파일이 존재하는데 org.springframework.b
 실제로 전부 다 가져오는게 아니고 @ConditionalOn~~ 조건에 따라 다르다.
 ```
 
+<br/>
+
 즉, ComponentScan은 안에 해당되는 어노테이션에 대한 설정을 Bean으로 등록하여 사용 가능하게 해주고 EnableAutoConfiguration은 환경 설정에 필요한 자동 설정을 Bean으로 등록해준다.  
 
 따라서 EnableAutoConfiguration에 있는 설정을 사용하지 않을 것이라면 사용하지 않고 @Configuration, @ComponentScan 만으로도 구동이 가능하다.  
 
 
+<br/>
 
 >**References**  
 
