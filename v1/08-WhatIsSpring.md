@@ -174,6 +174,7 @@ META-INF 아래 spring.factories 파일이 존재하는데 org.springframework.b
 [AUTOWIRED(타입, 스프링) vs RESOURCE(이름, 자바) vs Inject(타입, 자바)](https://velog.io/@sungmo738/Resource-Autowired-Inject-%EC%B0%A8%EC%9D%B4)  
 [POJO](https://siyoon210.tistory.com/120)  
 
+<br/>
 
 >**References**  
 
