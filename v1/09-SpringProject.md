@@ -61,15 +61,18 @@ RabbitMQ : AMQP (Advanced Message Queueing Protocol) 로 만들어져 있으며 
 이상적인 마이크로서비스 환경은 마이크로서비스 사이의 통신이 비동기적으로 이루어지는 것인데, RabbitMQ를 사용하면 마이크로 서비스들이 외부의 Queue를 통해 메세지를 주고받도록 함으로써 쉽게 이 부분을 구성할 수 있다. 
 
 Eureka : 마이크로서비스들의 정보를 레지스트리에 등록할 수 있도록 하고 마이크로서비스의 동적인 탐색과 로드밸런싱을 제공한다.
+
+Zuul : 모든 마이크로서비스에 대한 요청을 먼저 받아들이고 라우팅하는 프록시 API Gateway 기능을 수행한다.
 ```
 
 <br/>  
 
-
+Spri
 
 >**References**  
 
 [WAS](https://enderbridge.tistory.com/37)  
 [Bean의 생명주기와 Bean Scope](https://maenco.tistory.com/entry/Spring-Container%EC%8A%A4%ED%94%84%EB%A7%81-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-Bean)  
 [SpringCloud](https://lion-king.tistory.com/11)  
-
+[API Gateway](https://ratseno.tistory.com/63)  
+[Spring Cloud Netflix with Docker](https://borakim-b.github.io/2019/09/28/20190928-zuul-gateway/)  
