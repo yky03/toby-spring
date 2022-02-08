@@ -40,11 +40,21 @@ WAS의 일반적인 기능, Web 환경을 위한 n-tier Architecture 플랫폼
 -스프링은 웹분야 뿐만이 아니라 어플리케이션 모든 분야에 걸쳐 적용이 가능한 다양한 라이브러리를 가지고 있다.  
 
 
+<br/>
+
+**>Sping Cloud 적용한 마이크로 서비스 환경**  
+
+![springcloud](https://t1.daumcdn.net/cfile/tistory/991F8C475C5C243320)
+
+
 
 <br/>  
+
 
 
 >**References**  
 
 [WAS](https://enderbridge.tistory.com/37)  
 [Bean의 생명주기와 Bean Scope](https://maenco.tistory.com/entry/Spring-Container%EC%8A%A4%ED%94%84%EB%A7%81-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-Bean)  
+[SpringCloud](https://lion-king.tistory.com/11)  
+
