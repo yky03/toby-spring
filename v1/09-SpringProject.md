@@ -42,11 +42,26 @@ WAS의 일반적인 기능, Web 환경을 위한 n-tier Architecture 플랫폼
 
 <br/>
 
-**>Sping Cloud 적용한 마이크로 서비스 환경**  
+>**Sping Cloud 적용한 마이크로 서비스 환경**  
 
 ![springcloud](https://t1.daumcdn.net/cfile/tistory/991F8C475C5C243320)
 
+: Spring Cloud는 분산 시스템에서 공통적인 패턴(구성 관리, 서비스 검색, 지능형 라우팅, 마이크로 프록시 등 )을 모아 신속하게 구축할 수 있는 도구를 스프링 라이브러리 형태로 제공한다.  
 
+따라서 개발자는 분산 시스템에서 필요한 부분들에 대한 부담을 덜고 충실하게 서비스의 기능을 구현하는 것에 충실할 수 있다. 또한 특정 벤더(AWS, Cloud Foundry 등)에 종속적이지 않기 때문에 다양한 분산 환경에서 잘 작동한다.   
+
+
+```
+Spring Config : Spring Boot Application은 application.properties 혹은 application.yml 파일에 환경설정을 저장하고 이 파일의 정보를 읽어 빌드하는데, 이 파일들은 해당 프로젝트와 함께 저장된다. 
+Spring Cloud Config 서버를 두어 사용하면 모든 Spring Boot Application의 환경설정 파일을 한 곳에 저장시킬 수 있고 해당 서버에 접근하여 환경설정 정보를 가져오도록 할 수 있다.
+이렇게 적용하면 모든 Application의 환경설정 정보를 한곳에서 관리가 가능하고 환경설정이 바뀌어도 Application 전체를 다시 빌드하지 않아도 된다. 
+하지만 우리 팀은 현재 Spring Config를 적용하지 않았다. 개발 초기에 적용했을 당시 개발 중에 환경설정이 바뀌면 바뀐 내용을 Spring Cloud Config 서버에 반영해야 해서 번거롭고 확인도 다시 해당 서버에서 해야하는 점이 불편하였다.
+
+RabbitMQ : AMQP (Advanced Message Queueing Protocol) 로 만들어져 있으며 Message Queue를 제공한다. 
+이상적인 마이크로서비스 환경은 마이크로서비스 사이의 통신이 비동기적으로 이루어지는 것인데, RabbitMQ를 사용하면 마이크로 서비스들이 외부의 Queue를 통해 메세지를 주고받도록 함으로써 쉽게 이 부분을 구성할 수 있다. 
+
+Eureka : 마이크로서비스들의 정보를 레지스트리에 등록할 수 있도록 하고 마이크로서비스의 동적인 탐색과 로드밸런싱을 제공한다.
+```
 
 <br/>  
 
